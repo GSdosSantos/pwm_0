@@ -6,9 +6,9 @@ Este projeto utiliza um servo motor controlado por PWM na GPIO 22 e LEDs RGB na 
 O código implementa os seguintes requisitos:
 
 1. **Frequência de PWM:** Definida para 50Hz, correspondente a um período de 20ms.
-2. **Posição de 180 graus:** PWM com ciclo ativo de 2.400µs (0,12%) e espera de 5 segundos.
-3. **Posição de 90 graus:** PWM com ciclo ativo de 1.470µs (0,0735%) e espera de 5 segundos.
-4. **Posição de 0 graus:** PWM com ciclo ativo de 500µs (0,025%) e espera de 5 segundos.
+2. **Posição de 180 graus:** PWM com ciclo ativo de 2.400µs (12%) e espera de 5 segundos.
+3. **Posição de 90 graus:** PWM com ciclo ativo de 1.470µs (7,35%) e espera de 5 segundos.
+4. **Posição de 0 graus:** PWM com ciclo ativo de 500µs (2,5%) e espera de 5 segundos.
 5. **Movimentação Suave:** Movimentação periódica do servo entre 0 e 180 graus, com incremento de ±5µs e atraso de 10ms para ajuste suave.
 6. **Experimento com LED RGB:** Utilização da ferramenta BitDogLab para observar o comportamento do LED RGB controlado pela GPIO 12.
 
