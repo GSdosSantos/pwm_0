@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -3.6,
+      "left": -63.4,
+      "attrs": { "color": "blue" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": 7.6, "left": 163.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GP22", "servo1:PWM", "gray", [ "h52.8", "v6.45" ] ],
+    [ "servo1:GND", "pico:GND.8", "black", [ "h-38.4", "v-28.8" ] ],
+    [ "pico:3V3_EN", "servo1:V+", "red", [ "h33.6", "v25.65" ] ],
+    [ "pico:GP12", "led1:A", "green", [ "h0" ] ],
+    [ "pico:GND.4", "led1:C", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
